@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+      "firstName": "Ethan",
+      "lastName": "Taylor",
+      "taekwondoGrade": "2nd Dan"
+    },
+    {
+      "id": 2,
+      "firstName": "Sophia",
+      "lastName": "Johnson",
+      "taekwondoGrade": "3rd Dan"
+    },
+    {
+      "id": 3,
+      "firstName": "Liam",
+      "lastName": "Williams",
+      "taekwondoGrade": "1st Dan"
+    },
+    {
+      "id": 4,
+      "firstName": "Olivia",
+      "lastName": "Brown",
+      "taekwondoGrade": "4th Dan"
+    },
+    {
+      "id": 5,
+      "firstName": "Noah",
+      "lastName": "Jones",
+      "taekwondoGrade": "2nd Dan"
+    },
+    {
+      "id": 6,
+      "firstName": "Isabella",
+      "lastName": "Garcia",
+      "taekwondoGrade": "3rd Dan"
+    },
+    {
+      "id": 7,
+      "firstName": "James",
+      "lastName": "Martinez",
+      "taekwondoGrade": "1st Dan"
+    },
+    {
+      "id": 8,
+      "firstName": "Emma",
+      "lastName": "Rodriguez",
+      "taekwondoGrade": "4th Dan"
+    },
+    {
+      "id": 9,
+      "firstName": "Mason",
+      "lastName": "Davis",
+      "taekwondoGrade": "2nd Dan"
+    },
+    {
+      "id": 10,
+      "firstName": "Mia",
+      "lastName": "Hernandez",
+      "taekwondoGrade": "3rd Dan"
+    },
+    {
+      "id": 11,
+      "firstName": "Alexander",
+      "lastName": "Lopez",
+      "taekwondoGrade": "1st Dan"
+    },
+    {
+      "id": 12,
+      "firstName": "Charlotte",
+      "lastName": "Gonzalez",
+      "taekwondoGrade": "4th Dan"
+    },
+    {
+      "id": 13,
+      "firstName": "Benjamin",
+      "lastName": "Wilson",
+      "taekwondoGrade": "2nd Dan"
+    }
+  ]
+  
