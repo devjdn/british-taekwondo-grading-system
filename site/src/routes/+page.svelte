@@ -1,4 +1,6 @@
 <script lang="ts">
+	import type { Student } from "../types/students";
+	import Table from "$lib/components/table/Table.svelte";
 	import students from "./api/students/students.json";
 </script>
 
@@ -26,40 +28,7 @@
 	</div>
 </section>
 
-<section class="student-list">
-	<header class="student-list-header">
-		<div class="student-list-heading">
-			<strong>Student ID</strong>
-		</div>
-		<div class="student-list-heading">
-			<strong>First name</strong>
-		</div>
-		<div class="student-list-heading">
-			<strong>Last name</strong>
-		</div>
-		<div class="student-list-heading">
-			<strong>Grade</strong>
-		</div>
-	</header>
-	<ul class="student-list-ul">
-		{#each students as student}
-			<li class="student-list-li">
-				<div class="student-list-column">
-					<p>{student.id}</p>
-				</div>
-				<div class="student-list-column">
-					<p>{student.firstName}</p>
-				</div>
-				<div class="student-list-column">
-					<p>{student.lastName}</p>
-				</div>
-				<div class="student-list-column">
-					<p>{student.taekwondoGrade}</p>
-				</div>
-			</li>
-		{/each}
-	</ul>
-</section>
+<Table columnHeaders={["Candidate number", "Full name", "Grade"]} rows={students} columns={["candidateId", "fullName", "taekwondoGrade"]} />
 
 <style>
 
@@ -84,6 +53,8 @@
 		background: var(--container-bg-primary);
 		border-radius: 18px;
 		border: var(--container-bd-primary);
+		max-width: 800px;
+		overflow-x: auto;
 
 		header.student-list-header{
 			background: var(--container-bg-secondary);
@@ -91,7 +62,7 @@
 			border-top-right-radius: inherit;
 			border-bottom: var(--container-bd-primary);
 			display: grid;
-			grid-template-columns: repeat(4,1fr);
+			grid-template-columns: repeat(3,1fr);
 
 			.student-list-heading{
 				padding: 18px 36px;
@@ -109,7 +80,7 @@
 			li.student-list-li{
 				border-bottom: var(--container-bd-primary);
 				display: grid;
-				grid-template-columns: repeat(4,1fr);
+				grid-template-columns: repeat(3,1fr);
 
 				&:last-of-type{
 					border-bottom: none;

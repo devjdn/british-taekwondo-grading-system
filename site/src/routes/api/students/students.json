@@ -1,81 +1,67 @@
 [
-    {
-      "id": 1,
-      "firstName": "Ethan",
-      "lastName": "Taylor",
+  {
+      "candidateId": 1,
+      "fullName": "Ethan Taylor",
       "taekwondoGrade": "2nd Dan"
-    },
-    {
-      "id": 2,
-      "firstName": "Sophia",
-      "lastName": "Johnson",
+  },
+  {
+      "candidateId": 2,
+      "fullName": "Sophia Johnson",
       "taekwondoGrade": "3rd Dan"
-    },
-    {
-      "id": 3,
-      "firstName": "Liam",
-      "lastName": "Williams",
+  },
+  {
+      "candidateId": 3,
+      "fullName": "Liam Williams",
       "taekwondoGrade": "1st Dan"
-    },
-    {
-      "id": 4,
-      "firstName": "Olivia",
-      "lastName": "Brown",
+  },
+  {
+      "candidateId": 4,
+      "fullName": "Olivia Brown",
       "taekwondoGrade": "4th Dan"
-    },
-    {
-      "id": 5,
-      "firstName": "Noah",
-      "lastName": "Jones",
+  },
+  {
+      "candidateId": 5,
+      "fullName": "Noah Jones",
       "taekwondoGrade": "2nd Dan"
-    },
-    {
-      "id": 6,
-      "firstName": "Isabella",
-      "lastName": "Garcia",
+  },
+  {
+      "candidateId": 6,
+      "fullName": "Isabella Garcia",
       "taekwondoGrade": "3rd Dan"
-    },
-    {
-      "id": 7,
-      "firstName": "James",
-      "lastName": "Martinez",
+  },
+  {
+      "candidateId": 7,
+      "fullName": "James Martinez",
       "taekwondoGrade": "1st Dan"
-    },
-    {
-      "id": 8,
-      "firstName": "Emma",
-      "lastName": "Rodriguez",
+  },
+  {
+      "candidateId": 8,
+      "fullName": "Emma Rodriguez",
       "taekwondoGrade": "4th Dan"
-    },
-    {
-      "id": 9,
-      "firstName": "Mason",
-      "lastName": "Davis",
+  },
+  {
+      "candidateId": 9,
+      "fullName": "Mason Davis",
       "taekwondoGrade": "2nd Dan"
-    },
-    {
-      "id": 10,
-      "firstName": "Mia",
-      "lastName": "Hernandez",
+  },
+  {
+      "candidateId": 10,
+      "fullName": "Mia Hernandez",
       "taekwondoGrade": "3rd Dan"
-    },
-    {
-      "id": 11,
-      "firstName": "Alexander",
-      "lastName": "Lopez",
+  },
+  {
+      "candidateId": 11,
+      "fullName": "Alexander Lopez",
       "taekwondoGrade": "1st Dan"
-    },
-    {
-      "id": 12,
-      "firstName": "Charlotte",
-      "lastName": "Gonzalez",
+  },
+  {
+      "candidateId": 12,
+      "fullName": "Charlotte Gonzalez",
       "taekwondoGrade": "4th Dan"
-    },
-    {
-      "id": 13,
-      "firstName": "Benjamin",
-      "lastName": "Wilson",
+  },
+  {
+      "candidateId": 13,
+      "fullName": "Benjamin Wilson",
       "taekwondoGrade": "2nd Dan"
-    }
-  ]
-  
+  }
+]

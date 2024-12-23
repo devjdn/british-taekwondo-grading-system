@@ -4,6 +4,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	border-style: solid;
+	border-width: 0;
 }
 
 :root {
@@ -34,7 +36,7 @@ html{
 	--body-bg: #f8f8f8;
 	--header-bg: #fff;
 	--container-bg-primary: #f9f9f9;
-	--container-bg-secondary: #f7f7f7;
+	--container-bg-secondary: #f3f3f3;
 	--button-bg-primary: #ebebeb;
 	--button-bg-opposing: #000;
 	--input-bg: #fff;
@@ -55,8 +57,8 @@ html{
 	// background colours
 	--body-bg: #000;
 	--header-bg: #000;
-	--container-bg-primary: #090909;
-	--container-bg-secondary: #121212;
+	--container-bg-primary: #050505;
+	--container-bg-secondary: #101010;
 	--button-bg-primary: #111;
 	--button-bg-opposing: #fff;
 	--input-bg: #000;
@@ -79,28 +81,19 @@ body {
 	margin: 0;
 	background-color: var(--body-bg);
 	background-image:
-					linear-gradient(to bottom, var(--gradient-overlay-bg-1), var(--gradient-overlay-bg-2) 15%), 
+					linear-gradient(to bottom, var(--gradient-overlay-bg-1), var(--gradient-overlay-bg-2) 155px), 
 					linear-gradient(to right, var(--brand-blue), var(--brand-red));
 }
-
-/*
-@media (prefers-color-scheme: dark) {
-	body{
-		background-color: #000;
-		background-image:
-					linear-gradient(to bottom, #0000005c, #000 15%), 
-					linear-gradient(to right, var(--brand-blue), var(--brand-red));
-	};
-}
-*/
 
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
 	font-weight: 400;
 }
 
-h1,h2,h3,strong{
+h1,h2,h3,h4,strong{
 	color: var(--text-primary);
 }
 
@@ -123,6 +116,9 @@ a{
 h1 {
 	font-size: clamp(1.55em, 3.5vw, 2em);
 	color: var(--text-primary);
+}
+h4{
+	font-size: clamp(1em, 3.5vw, 1.15em);
 }
 
 span.non-heading-large-text{

@@ -1,15 +1,10 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import colorLogo from '$lib/images/British-Taekwondo-landscape-small.png';
     import solidLogo from '$lib/images/BTLogoWhite-sm.png';
   	import { LogIn, LogOut, Home, Clipboard, Search, ArrowUpRight } from 'lucide-svelte';
-	import { goto } from '$app/navigation';
-    import SettingsMenu from './settings/settings-menu.svelte';
+    import SettingsMenu from './settings/SettingsMenu.svelte';
 	import { theme } from '$lib/stores/theme-store';
-
-	function navigate() {
-		goto('/login');
-	}
+	import { page } from '$app/state';
 
 	const links = [
 		{name: 'Home', href: '/', icon: Home},
@@ -33,13 +28,13 @@
 	<nav>
 		<ul>
 			{#each links as link}
-				<li aria-current={$page.url.pathname === link.href ? 'page' : undefined}>
+				<li aria-current={page.url.pathname === link.href ? 'page' : undefined}>
 					<a href={link.href} target={link.href.startsWith('https') ? "_blank" : undefined}>
 						<div class="link-content">
 							<link.icon size={20}/>
 							{link.name}
 						</div>
-						<div class="link-activity-bar" data-link-active={$page.url.pathname === link.href ? 'active' : 'inactive'}></div>
+						<div class="link-activity-bar" data-link-active={page.url.pathname === link.href ? 'active' : 'inactive'}></div>
 					</a>
 				</li>
 			{/each}
@@ -47,13 +42,13 @@
 
 		<div class="nav-divider"></div>
 
-		{#if $page.url.pathname != '/login'}
-				<button onclick={navigate} class="login">
+		{#if page.url.pathname != '/login'}
+				<button onclick={() => window.location.href = '/login'} class="login">
 					Login
 					<LogIn size={20}/>
 				</button>
 			{:else}
-				<button onclick={navigate} class="login">
+				<button onclick={() => window.location.href = '/login'} class="login">
 					Sign out
 					<LogOut size={20}/>
 				</button>

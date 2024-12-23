@@ -1,17 +1,14 @@
 <script>
-    // import LogIn from 'lucide-svelte/icons/log-in';
     import solidLogo from '$lib/images/BTLogoWhite-sm.png';
-    // import colorLogo from '$lib/images/British-Taekwondo-landscape-small.png';
     import { theme } from '$lib/stores/theme-store';
 </script>
 
 <div class="form-wrapper">
     <div class="login-introduction">
         {#if $theme === 'light'}
-            <!-- <img class="light-logo" src={colorLogo} alt="British Taekwondo logo in brand colours"> -->
             <img class="light-logo" src={solidLogo} alt="British Taekwondo logo in solid black">
         {:else}
-            <img class="dark-logo" src={solidLogo} alt="British Taekwondo logo in solid black">
+            <img class="dark-logo" src={solidLogo} alt="British Taekwondo logo in solid white">
         {/if}
         <h1>Access your British Taekwondo Grading account.</h1>
     </div>
