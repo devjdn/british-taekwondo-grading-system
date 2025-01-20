@@ -10,7 +10,8 @@
 		{name: 'Home', href: '/', icon: Home},
 		{name: 'Grade', href: '/grade', icon: Clipboard},
 		{name: 'Search', href: '/search', icon: Search},
-		{name: 'British Taekwondo', href: 'https://britishtaekwondo.org.uk', icon: ArrowUpRight}
+		{name: 'Login', href: '/login', icon: LogIn},
+		{name: 'British Taekwondo', href: 'https://britishtaekwondo.org.uk', icon: ArrowUpRight},
 	]
 </script>
 
@@ -39,22 +40,6 @@
 				</li>
 			{/each}
 		</ul>
-
-		<div class="nav-divider"></div>
-
-		{#if page.url.pathname != '/login'}
-				<button onclick={() => window.location.href = '/login'} class="login">
-					Login
-					<LogIn size={20}/>
-				</button>
-			{:else}
-				<button onclick={() => window.location.href = '/login'} class="login">
-					Sign out
-					<LogOut size={20}/>
-				</button>
-		{/if}
-
-		<div class="nav-divider"></div>
 
 		<SettingsMenu/>
 
@@ -137,11 +122,6 @@
 				}
 			}
 		
-		}
-
-		.nav-divider{
-			border-left: var(--container-bd-primary);
-			height: 20px;
 		}
 
 	}

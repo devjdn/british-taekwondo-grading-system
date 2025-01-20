@@ -19,7 +19,7 @@
         </div>
         <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="••••••••">
+            <input type="password" name="password" id="password" placeholder="••••••••••">
         </div>
         <div class="form-actions">
             <button class="form-submit" aria-label="form submission button">
