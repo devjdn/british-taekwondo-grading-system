@@ -15,11 +15,11 @@
     <form action="">
         <div class="form-group">
             <label for="email">Email address</label>
-            <input type="email" name="email" id="email" placeholder="e.g. britishtaekwondo@outlook.com">
+            <input required type="email" name="email" id="email" placeholder="e.g. britishtaekwondo@outlook.com">
         </div>
         <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="••••••••••">
+            <input required type="password" name="password" id="password" placeholder="••••••••••">
         </div>
         <div class="form-actions">
             <button class="form-submit" aria-label="form submission button">
@@ -79,6 +79,10 @@
                 background: var(--input-bg);
                 border: var(--container-bd-secondary);
                 color: var(--text-primary);
+
+                &:invalid{
+                    border: 1px solid red;
+                }
             }
         }
 

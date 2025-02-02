@@ -1,5 +1,4 @@
 <script lang="ts">
-	import type { Student } from "../types/students";
 	import Table from "$lib/components/table/Table.svelte";
 	import students from "./api/students/students.json";
 </script>
